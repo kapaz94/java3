@@ -1,0 +1,15 @@
+package bank.data;
+
+public class MasterCard extends Card{
+    public MasterCard() {
+        super(PaymentSystem.MASTERCARD);
+    }
+
+    protected boolean isCountryValidForTheseCard(Country country) {
+        return false;
+    }
+
+    protected boolean isCountryValidForTheseCard(){
+        return true;
+    }
+}
